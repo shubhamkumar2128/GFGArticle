@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geeks for Geeks Articles</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        section {
+            margin: 20px;
+        }
+
+        article {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            overflow: hidden;
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        article:hover {
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        }
+
+        article img {
+            width: 100%;
+            height: auto;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        article div {
+            padding: 20px;
+        }
+
+        article h2 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        article p {
+            margin-bottom: 0;
+            color: #666;
+        }
+
+        .collapsible {
+            cursor: pointer;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            border: none;
+            outline: none;
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .content {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+
+        .active {
+            max-height: 1000px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style></head>
+
+<body>
+
+	<header>
+		<h1>Geeks for Geeks Articles</h1>
+	</header>
+
+	<section>
+		 <button class="collapsible">Click to expand Articles</button>
+        <div class="content">
+		<article>
+
+			<div>
+				<h2><a href="https://www.geeksforgeeks.org/mouse-programming-in-c-c/">Mouse Programming in C/C++ - 1</a>
+				</h2>
+
+			</div>
+		</article>
+
+		<article>
+
+			<div>
+				<h2><a href="https://www.geeksforgeeks.org/use-cases-of-mouse-programming-in-c-c/">Mouse programming in
+						C/C++ - 2</a></h2>
+
+			</div>
+		</article>
+
+		<article>
+
+			<div>
+				<h2><a href="https://www.geeksforgeeks.org/use-cases-of-mouse-programming-in-c-c-set-2/">Mouse
+						programming in C/C++ - 3</a></h2>
+
+			</div>
+		</article>
+		<article>
+
+			<div>
+				<h2><a
+						href="https://www.geeksforgeeks.org/spring-boot-consume-message-through-kafka-save-into-elasticsearch-and-plot-into-grafana/">Kafka,
+						ElasticSearch, Grafana</a></h2>
+
+			</div>
+		</article>
+		<article>
+
+			<div>
+				<h2><a href="https://www.geeksforgeeks.org/spring-boot-spring-data-jpa/">Spring Data JPA</a></h2>
+
+			</div>
+		</article>
+		<article>
+
+			<div>
+				<h2><a href="https://www.geeksforgeeks.org/kubernetes-vs-docker/">Kubernetese and docker</a></h2>
+
+			</div>
+		</article>
+		<article>
+
+			<div>
+				<h2><a
+						href="https://www.geeksforgeeks.org/upload-multiple-files-in-spring-boot-using-jpa-thymeleaf-multipart/">Upload
+						Multiple Files</a></h2>
+
+			</div>
+		</article>
+		<article>
+
+			<div>
+				<h2><a href="https://www.geeksforgeeks.org/spring-boot-thymeleaf-with-example/">Thymeleaf</a></h2>
+
+			</div>
+		</article>
+		<article>
+
+			<div>
+				<h2><a href="https://www.geeksforgeeks.org/spring-boot-rest-example/">REST Example</a></h2>
+
+			</div>
+		</article>
+		<article>
+
+			<div>
+				<h2><a href="https://www.geeksforgeeks.org/generate-junit-test-cases-using-randoop-api-in-java/">Randoop
+						api</a></h2>
+
+			</div>
+		</article>
+</div>
+
+	</section>
+
+	<footer>
+		&copy; 2024 Shubham Kumar
+	</footer>
+	
+	<script>
+        document.querySelector('.collapsible').addEventListener('click', function () {
+            this.classList.toggle('active');
+            var content = document.querySelector('.content');
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + 'px';
+            }
+        });
+    </script>
+
+</body>
+
+</html>
