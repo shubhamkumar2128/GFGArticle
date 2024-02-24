@@ -31,7 +31,6 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             margin-bottom: 20px;
             overflow: hidden;
-            transition: box-shadow 0.3s ease-in-out;
         }
 
         article:hover {
@@ -59,30 +58,6 @@
             color: #666;
         }
 
-        .collapsible {
-            cursor: pointer;
-            padding: 10px;
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            border: none;
-            outline: none;
-            width: 100%;
-            border-radius: 8px;
-            margin-bottom: 10px;
-        }
-
-        .content {
-            padding: 0 20px;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.2s ease-out;
-        }
-
-        .active {
-            max-height: 1000px;
-        }
-
         footer {
             background-color: #333;
             color: #fff;
@@ -92,116 +67,107 @@
             bottom: 0;
             width: 100%;
         }
-    </style></head>
+
+        .article-number {
+            background-color: #333;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
 
 <body>
 
-	<header>
-		<h1>Geeks for Geeks Articles</h1>
-	</header>
+    <header>
+        <h1>Geeks for Geeks Articles</h1>
+    </header>
 
-	<section>
-		 <button class="collapsible">Click to expand Articles</button>
+    <section>
         <div class="content">
-		<article>
+            <article>
+                <div>
+                    <h2><span class="article-number">1.</span><a
+                            href="https://www.geeksforgeeks.org/mouse-programming-in-c-c/">Mouse Programming in C/C++ - 1</a>
+                    </h2>
+                </div>
+            </article>
 
-			<div>
-				<h2><a href="https://www.geeksforgeeks.org/mouse-programming-in-c-c/">Mouse Programming in C/C++ - 1</a>
-				</h2>
+            <article>
+                <div>
+                    <h2><span class="article-number">2.</span><a
+                            href="https://www.geeksforgeeks.org/use-cases-of-mouse-programming-in-c-c/">Mouse programming
+                            in C/C++ - 2</a></h2>
+                </div>
+            </article>
 
-			</div>
-		</article>
+            <article>
+                <div>
+                    <h2><span class="article-number">3.</span><a
+                            href="https://www.geeksforgeeks.org/use-cases-of-mouse-programming-in-c-c-set-2/">Mouse
+                            programming in C/C++ - 3</a></h2>
+                </div>
+            </article>
 
-		<article>
+            <article>
+                <div>
+                    <h2><span class="article-number">4.</span><a
+                            href="https://www.geeksforgeeks.org/spring-boot-consume-message-through-kafka-save-into-elasticsearch-and-plot-into-grafana/">Kafka,
+                            ElasticSearch, Grafana</a></h2>
+                </div>
+            </article>
 
-			<div>
-				<h2><a href="https://www.geeksforgeeks.org/use-cases-of-mouse-programming-in-c-c/">Mouse programming in
-						C/C++ - 2</a></h2>
+            <article>
+                <div>
+                    <h2><span class="article-number">5.</span><a
+                            href="https://www.geeksforgeeks.org/spring-boot-spring-data-jpa/">Spring Data JPA</a></h2>
+                </div>
+            </article>
 
-			</div>
-		</article>
+            <article>
+                <div>
+                    <h2><span class="article-number">6.</span><a
+                            href="https://www.geeksforgeeks.org/kubernetes-vs-docker/">Kubernetes and Docker</a></h2>
+                </div>
+            </article>
 
-		<article>
+            <article>
+                <div>
+                    <h2><span class="article-number">7.</span><a
+                            href="https://www.geeksforgeeks.org/upload-multiple-files-in-spring-boot-using-jpa-thymeleaf-multipart/">Upload
+                            Multiple Files</a></h2>
+                </div>
+            </article>
 
-			<div>
-				<h2><a href="https://www.geeksforgeeks.org/use-cases-of-mouse-programming-in-c-c-set-2/">Mouse
-						programming in C/C++ - 3</a></h2>
+            <article>
+                <div>
+                    <h2><span class="article-number">8.</span><a
+                            href="https://www.geeksforgeeks.org/spring-boot-thymeleaf-with-example/">Thymeleaf</a></h2>
+                </div>
+            </article>
 
-			</div>
-		</article>
-		<article>
+            <article>
+                <div>
+                    <h2><span class="article-number">9.</span><a
+                            href="https://www.geeksforgeeks.org/spring-boot-rest-example/">REST Example</a></h2>
+                </div>
+            </article>
 
-			<div>
-				<h2><a
-						href="https://www.geeksforgeeks.org/spring-boot-consume-message-through-kafka-save-into-elasticsearch-and-plot-into-grafana/">Kafka,
-						ElasticSearch, Grafana</a></h2>
+            <article>
+                <div>
+                    <h2><span class="article-number">10.</span><a
+                            href="https://www.geeksforgeeks.org/generate-junit-test-cases-using-randoop-api-in-java/">Randoop
+                            API</a></h2>
+                </div>
+            </article>
+        </div>
+    </section>
 
-			</div>
-		</article>
-		<article>
-
-			<div>
-				<h2><a href="https://www.geeksforgeeks.org/spring-boot-spring-data-jpa/">Spring Data JPA</a></h2>
-
-			</div>
-		</article>
-		<article>
-
-			<div>
-				<h2><a href="https://www.geeksforgeeks.org/kubernetes-vs-docker/">Kubernetese and docker</a></h2>
-
-			</div>
-		</article>
-		<article>
-
-			<div>
-				<h2><a
-						href="https://www.geeksforgeeks.org/upload-multiple-files-in-spring-boot-using-jpa-thymeleaf-multipart/">Upload
-						Multiple Files</a></h2>
-
-			</div>
-		</article>
-		<article>
-
-			<div>
-				<h2><a href="https://www.geeksforgeeks.org/spring-boot-thymeleaf-with-example/">Thymeleaf</a></h2>
-
-			</div>
-		</article>
-		<article>
-
-			<div>
-				<h2><a href="https://www.geeksforgeeks.org/spring-boot-rest-example/">REST Example</a></h2>
-
-			</div>
-		</article>
-		<article>
-
-			<div>
-				<h2><a href="https://www.geeksforgeeks.org/generate-junit-test-cases-using-randoop-api-in-java/">Randoop
-						api</a></h2>
-
-			</div>
-		</article>
-</div>
-
-	</section>
-
-	<footer>
-		&copy; 2024 Shubham Kumar
-	</footer>
-	
-	<script>
-        document.querySelector('.collapsible').addEventListener('click', function () {
-            this.classList.toggle('active');
-            var content = document.querySelector('.content');
-            if (content.style.maxHeight) {
-                content.style.maxHeight = null;
-            } else {
-                content.style.maxHeight = content.scrollHeight + 'px';
-            }
-        });
-    </script>
+    <footer>
+        &copy; 2024 Shubham Kumar
+    </footer>
 
 </body>
 
